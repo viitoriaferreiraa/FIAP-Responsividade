@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gulliver Traveller</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/banner-content.css" />
+    <link rel="stylesheet" href="./css/main-content.css" />
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <button class="btn-icon-header" id="button" onclick="toggleSidebar()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div>
+        <h1 class="title-header">GULLIVER</h1>
+      </div>
+      <div>
+        <nav>
+          <ul class="nav-ul" id="navigation-header">
+            <button
+              class="btn-icon-header"
+              id="button"
+              onclick="toggleSidebar()"
+            >
+              <i class="fa-solid fa-x icon"></i>
+            </button>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Como Chegar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cultura</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Onde se Hospedar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gastronomia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Entretenimento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="banner-content" id="content" onclick="closeSidebar()">
+      <img
+        class="img-banner"
+        src="./assets/image/sp-banner.jpg"
+        alt="Foto tirada de dia da cidade de São Paulo"
+      />
+      <h2 class="banner-title">São Paulo</h2>
+      <button class="banner-button">Ver mais</button>
+    </section>
+
+    <section class="main-content">
+      <h2 class="title-content">Hotéis Recomendados</h2>
+
+      <div class="wrapper-cards">
+        <div class="card-content">
+        
+          <img
+            class="img-card"
+            src="./assets/image/hotel-01.jpg"
+            alt="Foto de um quarto de hotel"
+          />
+       
+          <div class="container-description">
+            <div class="title-card">
+              <h3>Ape Paulista Bela Cintra</h3>
+              <div class="wrapper-icons">
+                <i class="fa-solid fa-star icon-start"></i>
+                <i class="fa-solid fa-star icon-start"></i>
+                <i class="fa-solid fa-star icon-start"></i>
+                <i class="fa-solid fa-star icon-start"></i>
+                <i class="fa-solid fa-thumbs-up icon-thumb"></i>
+              </div>
+            </div>
+            <div class="description-card">
+              <p>Consolação, São Paulo</p>
+              <a href="https://www.google.com/maps/place/Av.+Paulista+%26+R.+Bela+Cintra+-+Consola%C3%A7%C3%A3o,+S%C3%A3o+Paulo+-+SP,+01415-002/@-23.5564512,-46.6640976,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce582d6a903a1f:0x16a358eb21a0a03e!8m2!3d-23.5564561!4d-46.6619089" 
+              target="_blank"
+              class="map-card">
+                Mostrar no mapa
+              </a>
+              <p class="description-paragraph">
+                <i class="fa-solid fa-circle icon-circle"></i>
+                2,8 km do centro
+              </p>
+              <p class="description-paragraph">
+                <i class="fa-solid fa-circle icon-circle"></i>
+                Acesso ao metrô
+              </p>
+            </div>
+            <p class="description-info">Situado a 1,4 km do Estádio do Pacaembu, em São Paulo, o Ape Paulista Bela Cintra oferece acomodações com ar-condicionado e Wi-Fi gratuito.</p>
+          </div>
+          <div class="container-price">
+            <div>
+              <p class="description-price">1 noite, 2 adultos</p>
+              <p class="price-value">R$ 382,00</p>
+              <p class="description-price">Inclui impostos e taxas</p>
+            </div>
+            <a href="https://www.booking.com/hotel/br/ape-paulista-bela-cintra.en-gb.html?aid=309654&label=hotels-english-en-row-A8ACNSF8nLznrwJWknbalgS166197671742%3Apl%3Ata%3Ap1%3Ap22%2C563%2C000%3Aac%3Aap%3Aneg%3Afi%3Atikwd-135245597%3Alp9074138%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YcsZ-Id2vkzIfTmYhvC5HOg&sid=afa6a9c9d85271758d6fde95ca295c25&all_sr_blocks=880320702_357214978_0_0_0;checkin=2022-11-10;checkout=2022-11-11;dest_id=-671824;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=880320702_357214978_0_0_0;hpos=1;matching_block_id=880320702_357214978_0_0_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=880320702_357214978_0_0_0__38223;srepoch=1664647750;srpvid=2bbf7fa211110238;type=total;ucfs=1&#hotelTmpl" target="_blank" class="btn-reserve">
+              Reservar Agora
+            </a>
+          </div>
+        </div>      
+      </div>
+
+      <div class="wrapper-cards">
+        <div class="card-content">
+        
+          <img
+            class="img-card"
+            src="./assets/image/hotel-02.jpg"
+            alt="Foto de um quarto de hotel"
+          />
+       
+          <div class="container-description">
+            <div class="title-card">
+              <h3>O Viajante Av Paulista</h3>
+              <div class="wrapper-icons">
+                <i class="fa-solid fa-star icon-start"></i>
+                <i class="fa-solid fa-star icon-start"></i>
+                <i class="fa-solid fa-star icon-start"></i>                
+                <i class="fa-solid fa-thumbs-up icon-thumb"></i>
+              </div>
+            </div>
+            <div class="description-card">
+              <p>AV Paulista, São Paulo</p>
+              <a href="https://www.booking.com/hotel/br/o-viajante-hostel.en-gb.html?aid=309654&label=hotels-english-en-row-A8ACNSF8nLznrwJWknbalgS166197671742%3Apl%3Ata%3Ap1%3Ap22%2C563%2C000%3Aac%3Aap%3Aneg%3Afi%3Atikwd-135245597%3Alp9074138%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YcsZ-Id2vkzIfTmYhvC5HOg&sid=afa6a9c9d85271758d6fde95ca295c25&all_sr_blocks=734620101_327241198_0_2_0%2C734620101_327241198_0_2_0;checkin=2022-11-10;checkout=2022-11-11;dest_id=-671824;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=2;highlighted_blocks=734620101_327241198_0_2_0%2C734620101_327241198_0_2_0;hpos=2;matching_block_id=734620101_327241198_0_2_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=734620101_327241198_0_2_0__5500%2C734620101_327241198_0_2_0__5500;srepoch=1664677136;srpvid=31d71047382500a5;type=total;ucfs=1&#hotelTmpl" 
+              target="_blank"
+              class="map-card">
+                Mostrar no mapa
+              </a>
+              <p class="description-paragraph">
+                <i class="fa-solid fa-circle icon-circle"></i>
+                2,8 km do centro
+              </p>
+              <p class="description-paragraph">
+                <i class="fa-solid fa-circle icon-circle"></i>
+                Acesso ao metrô
+              </p>
+            </div>
+            <p class="description-info">
+              Situado em São Paulo, a 500 metros do MASP São Paulo, O VIAJANTE Av PAULISTA oferece acomodações com lounge compartilhado, estacionamento privativo, jardim e terraço.
+            </p>
+          </div>
+          <div class="container-price">
+            <div>
+              <p class="description-price">1 noite, 2 adultos</p>
+              <p class="price-value">R$ 110,00</p>
+              <p class="description-price">Inclui impostos e taxas</p>
+            </div>
+            <a href="https://www.google.com/maps/place/O+VIAJANTE+HOSTEL/@-23.5577607,-46.6555119,20z/data=!4m16!1m7!3m6!1s0x94ce59cb79b24259:0xed5870e4ecee0982!2sRua+Peixoto+Gomide,+435+-+Jardim+Paulista,+S%C3%A3o+Paulo+-+SP,+01409-001!3b1!8m2!3d-23.5577656!4d-46.6552383!3m7!1s0x94ce59cb9d89b33d:0x690733a86b044e9a!5m2!4m1!1i2!8m2!3d-23.5577261!4d-46.6555229" target="_blank" class="btn-reserve">
+              Reservar Agora
+            </a>
+          </div>
+        </div>      
+      </div>
+      
+      <div class="wrapper-cards">
+        <div class="card-content">
+        
+          <img
+            class="img-card"
+            src="./assets/image/hotel-03.jpg"
+            alt="Foto de um quarto de hotel"
+          />
+       
+          <div class="container-description">
+            <div class="title-card">
+              <h3>Residencial Bella Vista Suites</h3>
+              <div class="wrapper-icons">
+                <i class="fa-solid fa-star icon-start"></i>
+                <i class="fa-solid fa-star icon-start"></i>
+                <i class="fa-solid fa-star icon-start"></i>
+                <i class="fa-solid fa-star icon-start"></i>
+                <i class="fa-solid fa-thumbs-up icon-thumb"></i>
+              </div>
+            </div>
+            <div class="description-card">
+              <p>Bela Vista, São Paulo</p>
+              <a href="https://www.google.com/maps/place/R.+Conde+de+S%C3%A3o+Joaquim,+211+-+Bela+Vista,+S%C3%A3o+Paulo+-+SP,+01320-010/@-23.5579461,-46.6409787,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce59af0c9eda9d:0xc2818c5db537ff6!8m2!3d-23.557951!4d-46.63879" 
+              target="_blank"
+              class="map-card">
+                Mostrar no mapa
+              </a>
+              <p class="description-paragraph">
+                <i class="fa-solid fa-circle icon-circle"></i>
+                2,8 km do centro
+              </p>
+              <p class="description-paragraph">
+                <i class="fa-solid fa-circle icon-circle"></i>
+                Acesso ao metrô
+              </p>
+            </div>
+            <p class="description-info">
+              A apenas 600 m da estação de metrô Liberdade, em São Paulo, o Bella Vista Suítes dispõe de piscina na cobertura, academia e sauna. Oferece WiFi gratuito no saguão.
+            </p>
+          </div>
+          <div class="container-price">
+            <div>
+              <p class="description-price">1 noite, 2 adultos</p>
+              <p class="price-value">R$ 198,00</p>
+              <p class="description-price">Inclui impostos e taxas</p>
+            </div>
+            <a href="https://www.booking.com/hotel/br/residencial-bella-vista-suites.en-gb.html?aid=309654&label=hotels-english-en-row-A8ACNSF8nLznrwJWknbalgS166197671742%3Apl%3Ata%3Ap1%3Ap22%2C563%2C000%3Aac%3Aap%3Aneg%3Afi%3Atikwd-135245597%3Alp9074138%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YcsZ-Id2vkzIfTmYhvC5HOg&sid=afa6a9c9d85271758d6fde95ca295c25&all_sr_blocks=42542104_243351107_2_2_0;checkin=2022-11-10;checkout=2022-11-11;dest_id=-671824;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=4;highlighted_blocks=42542104_243351107_2_2_0;hpos=4;matching_block_id=42542104_243351107_2_2_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=42542104_243351107_2_2_0__19800;srepoch=1664647750;srpvid=2bbf7fa211110238;type=total;ucfs=1&#hotelTmpl" target="_blank" class="btn-reserve">
+              Reservar Agora
+            </a>
+          </div>
+        </div>      
+      </div>
+
+      <div class="wrapper-cards">
+        <div class="card-content">
+        
+          <img
+            class="img-card"
+            src="./assets/image/hotel-04.jpg"
+            alt="Foto de um quarto de hotel"
+          />
+       
+          <div class="container-description">
+            <div class="title-card">
+              <h3>Hotel Amália</h3>
+              <div class="wrapper-icons">
+                <i class="fa-solid fa-star icon-start"></i>
+                <i class="fa-solid fa-star icon-start"></i>                
+                <i class="fa-solid fa-thumbs-up icon-thumb"></i>
+              </div>
+            </div>
+            <div class="description-card">
+              <p>Consolação, São Paulo</p>
+              <a href="https://www.google.com/maps/place/R.+da+Consola%C3%A7%C3%A3o,+250+-+Consola%C3%A7%C3%A3o,+S%C3%A3o+Paulo+-+SP,+01302-000/@-23.5474796,-46.6478805,17z/data=!3m1!4b1!4m9!1m2!2m1!1s+Rua+Coronel+Xavier+de+Toledo,+250,+Consola%C3%A7%C3%A3o,+Sao+Paulo,+CEP+01048-000,+Brazil!3m5!1s0x94ce584dcb5f8c2b:0xfbadc1fa01d240c1!8m2!3d-23.5474846!4d-46.6436533!15sClFSdWEgQ29yb25lbCBYYXZpZXIgZGUgVG9sZWRvLCAyNTAsIENvbnNvbGHDp8OjbywgU2FvIFBhdWxvLCBDRVAgMDEwNDgtMDAwLCBCcmF6aWySARBnZW9jb2RlZF9hZGRyZXNz4AEA" 
+              target="_blank"
+              class="map-card">
+                Mostrar no mapa
+              </a>
+              <p class="description-paragraph">
+                <i class="fa-solid fa-circle icon-circle"></i>
+                2,5 km do centro
+              </p>
+              <p class="description-paragraph">
+                <i class="fa-solid fa-circle icon-circle"></i>
+                Acesso ao metrô
+              </p>
+            </div>
+            <p class="description-info">
+              O Hotel Amália oferece acomodações em São Paulo, a 2,5 km do centro da cidade. Os hóspedes podem desfrutar do restaurante no local. O acesso Wi-Fi gratuito está disponível nas áreas públicas. O pequeno-almoço diário é servido gratuitamente.
+            </p>
+          </div>
+          <div class="container-price">
+            <div>
+              <p class="description-price">1 noite, 2 adultos</p>
+              <p class="price-value">R$ 298,00</p>
+              <p class="description-price">Inclui impostos e taxas</p>
+            </div>
+            <a href="https://www.booking.com/hotel/br/ape-paulista-bela-cintra.en-gb.html?aid=309654&label=hotels-english-en-row-A8ACNSF8nLznrwJWknbalgS166197671742%3Apl%3Ata%3Ap1%3Ap22%2C563%2C000%3Aac%3Aap%3Aneg%3Afi%3Atikwd-135245597%3Alp9074138%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YcsZ-Id2vkzIfTmYhvC5HOg&sid=afa6a9c9d85271758d6fde95ca295c25&all_sr_blocks=880320702_357214978_0_0_0;checkin=2022-11-10;checkout=2022-11-11;dest_id=-671824;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=880320702_357214978_0_0_0;hpos=1;matching_block_id=880320702_357214978_0_0_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=880320702_357214978_0_0_0__38223;srepoch=1664647750;srpvid=2bbf7fa211110238;type=total;ucfs=1&#hotelTmpl" target="_blank" class="btn-reserve">
+              Reservar Agora
+            </a>
+          </div>
+        </div>      
+      </div>
+
+      <div class="wrapper-cards">
+        <div class="card-content">
+        
+          <img
+            class="img-card"
+            src="./assets/image/hotel-05.jpg"
+            alt="Foto de um quarto de hotel"
+          />
+       
+          <div class="container-description">
+            <div class="title-card">
+              <h3>Hotel Dona Lú</h3>
+              <div class="wrapper-icons">
+                <i class="fa-solid fa-star icon-start"></i>
+                <i class="fa-solid fa-star icon-start"></i>
+                <i class="fa-solid fa-star icon-start"></i>
+                <i class="fa-solid fa-star icon-start"></i>
+                <i class="fa-solid fa-thumbs-up icon-thumb"></i>
+              </div>
+            </div>
+            <div class="description-card">
+              <p>Santa Cecília, São Paulo</p>
+              <a href="https://www.google.com/maps/place/Largo+Santa+Cec%C3%ADlia,+166+-+Santa+Cecilia,+S%C3%A3o+Paulo+-+SP,+01225-010/@-23.5388971,-46.6524834,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce5840b7296b57:0x1de8f5ef0523a50f!8m2!3d-23.538902!4d-46.6502947" 
+              target="_blank"
+              class="map-card">
+                Mostrar no mapa
+              </a>
+              <p class="description-paragraph">
+                <i class="fa-solid fa-circle icon-circle"></i>
+                1,6 km do centro
+              </p>
+              <p class="description-paragraph">
+                <i class="fa-solid fa-circle icon-circle"></i>
+                Acesso ao metrô
+              </p>
+            </div>
+            <p class="description-info">
+              O Hotel Dona Lú é uma acomodação de estilo simples localizada no coração de São Paulo. Com acesso Wi-Fi gratuito, este hotel também oferece serviços de recepção 24 horas e lavanderia. A Estação de Metrô Santa Cecilia fica a poucos passos de distância.
+            </p>
+          </div>
+          <div class="container-price">
+            <div>
+              <p class="description-price">1 noite, 2 adultos</p>
+              <p class="price-value">R$ 382,00</p>
+              <p class="description-price">Inclui impostos e taxas</p>
+            </div>
+            <a href="https://www.booking.com/hotel/br/dona-lu-ltda.en-gb.html?aid=309654&label=hotels-english-en-row-A8ACNSF8nLznrwJWknbalgS166197671742%3Apl%3Ata%3Ap1%3Ap22%2C563%2C000%3Aac%3Aap%3Aneg%3Afi%3Atikwd-135245597%3Alp9074138%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YcsZ-Id2vkzIfTmYhvC5HOg&sid=afa6a9c9d85271758d6fde95ca295c25&all_sr_blocks=79444013_242733936_2_1_0;checkin=2022-11-10;checkout=2022-11-11;dest_id=-671824;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=5;highlighted_blocks=79444013_242733936_2_1_0;hpos=5;matching_block_id=79444013_242733936_2_1_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=79444013_242733936_2_1_0__13500;srepoch=1664647750;srpvid=2bbf7fa211110238;type=total;ucfs=1&#hotelTmpl" target="_blank" class="btn-reserve">
+              Reservar Agora
+            </a>
+          </div>
+        </div>      
+      </div>    
+    </section>
+    <footer class="footer">
+      <p class="footer-paragraph">
+        Desenvolvido por Gisele Araujo Silva e Vitória Katerine Ferreira
+      </p>
+      <p class="footer-paragraph">
+        <a
+          class="footer-link"
+          href="https://github.com/giselearaujos/FIAP-Enterprise-Connection-01"
+          target="_blank"
+        >
+          Repositório do Projeto
+          <i class="fa-solid fa-square-up-right footer-icon"></i>
+        </a>
+      </p>
+    </footer>
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>

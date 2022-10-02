@@ -1,0 +1,32 @@
+:root {
+  --white: #ffffff;
+  --text: #252525;
+  --background: #24252a;
+}
+
+.footer {
+  background-color: var(--background);
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.footer-paragraph {
+  text-align: center;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer-paragraph:nth-last-child(1) {
+  padding-top: 10px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.footer-icon {
+  font-size: 14px;
+  color: var(--white);
+}
