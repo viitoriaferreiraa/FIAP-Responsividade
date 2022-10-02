@@ -1,4 +1,4 @@
-# Atividade - Responsividada
+# Atividade - Responsividade
 
 ## Tecnologias Utilizadas:
 
